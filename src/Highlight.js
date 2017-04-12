@@ -15,7 +15,7 @@ export default class Highlight extends Component {
   }
 
   componentDidUpdate () {
-    highlight.initHighlighting.called = false
+    highlight.initHighlighting.called = true
     highlight.highlightBlock(findDOMNode(this.refs.code))
   }
 
